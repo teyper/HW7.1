@@ -525,8 +525,8 @@ SpriteRenderer:
   m_SortingLayerID: -837504541
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.17942329, g: 0.6037736, b: 0.18994436, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 83454a040b7e64eb5bfc5f8b01c80f4a, type: 3}
+  m_Color: {r: 0.59674263, g: 0.8490566, b: 0.6014151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -546,7 +546,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0308, y: -0.0615, z: 0}
-  m_LocalScale: {x: 16.732883, y: 10.148336, z: 9.04}
+  m_LocalScale: {x: 5.04, y: 3.0567126, z: 2.722878}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -659,6 +659,7 @@ GameObject:
   - component: {fileID: 1554079336}
   - component: {fileID: 1554079335}
   - component: {fileID: 1554079338}
+  - component: {fileID: 1554079339}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
@@ -772,6 +773,33 @@ MonoBehaviour:
   Xmin: -6.9
   Xmax: 6.9
   laserPrefab: {fileID: 7774412245332417008, guid: 3a0186424722143ae9cbb22297fb844f, type: 3}
+--- !u!50 &1554079339
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554079334}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1771446056
 GameObject:
   m_ObjectHideFlags: 0
