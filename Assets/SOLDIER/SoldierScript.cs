@@ -14,8 +14,11 @@ public class SoldierScript : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
 
+    //rotation of bullet
+    //bool laserRotation; 
+
     //laser direction
-    private Vector3 laserDirection = Vector3.up;
+    private Vector3 laserDirection = Vector3.down;
     // Start is called before the first frame update
 
     void Start()
@@ -115,12 +118,23 @@ public class SoldierScript : MonoBehaviour
             transform.position = new Vector3(Xmin, transform.position.y, transform.position.z);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))  // instatiate rasengan
+        if (Input.GetKeyDown(KeyCode.Space))  // instatiate laser
         {
             GameObject obj;
             obj = Instantiate(laserPrefab);
             //move laser to gun
             obj.transform.position = transform.position;
+            //laser rotation
+
+            if(laserDirection == Vector3.up)
+            {
+                obj.transform.Rotate(0f, 0f, 90f);
+            }
+            if (laserDirection == Vector3.down)
+            {
+                obj.transform.Rotate(0f, 0f, -90f);
+            }
+
             Rigidbody2D rigidBody = obj.GetComponent<Rigidbody2D>();
             rigidBody.velocity = laserDirection * 10f;
             // obj.transform.Translate(rasengy_x_offset, rasengy_y_offset, 0f);
