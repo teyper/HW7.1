@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: far bg
+    uniqueID: 3457462755
+    locked: 0
+  - name: bg
+    uniqueID: 1198628475
+    locked: 0
+  - name: p
+    uniqueID: 4103338517
+    locked: 0
+  - name: 4ground
+    uniqueID: 115970623
+    locked: 0
+  - name: top forgpround
+    uniqueID: 2794565643
+    locked: 0
