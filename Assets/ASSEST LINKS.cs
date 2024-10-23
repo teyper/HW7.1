@@ -13,6 +13,9 @@ public class ASSESTLINKS : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Player link:
+        //bullet link: https://www.pixilart.com/draw/lazer-bullet-10ba0a0082df430# 
+        //music link: 
+
     }
 }

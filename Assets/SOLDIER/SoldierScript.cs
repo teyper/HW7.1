@@ -13,7 +13,11 @@ public class SoldierScript : MonoBehaviour
     //create ani referenece 
     Animator animator;
     SpriteRenderer spriteRenderer;
+
+    //laser direction
+    private Vector3 laserDirection = Vector3.up;
     // Start is called before the first frame update
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -29,6 +33,7 @@ public class SoldierScript : MonoBehaviour
         {
             //runs when up arrow is presssed
             animator.SetBool("WalkUp", true);
+            laserDirection = Vector3.up;
         }
         if(Input.GetKeyUp(KeyCode.UpArrow))
         {
@@ -41,6 +46,7 @@ public class SoldierScript : MonoBehaviour
         {
             //runs when up arrow is presssed
             animator.SetBool("WalkDown", true);
+            laserDirection = Vector3.down;
         }
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
@@ -52,6 +58,7 @@ public class SoldierScript : MonoBehaviour
         {
             //runs when up arrow is presssed
             animator.SetBool("WalkRight", true);
+            laserDirection = Vector3.right;
         }
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
@@ -65,6 +72,7 @@ public class SoldierScript : MonoBehaviour
             //runs when up arrow is presssed
             animator.SetBool("WalkRight", true);
             spriteRenderer.flipX = true;
+            laserDirection = Vector3.left;
         }
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
@@ -113,7 +121,9 @@ public class SoldierScript : MonoBehaviour
             obj = Instantiate(laserPrefab);
             //move laser to gun
             obj.transform.position = transform.position;
-           // obj.transform.Translate(rasengy_x_offset, rasengy_y_offset, 0f);
+            Rigidbody2D rigidBody = obj.GetComponent<Rigidbody2D>();
+            rigidBody.velocity = laserDirection * 10f;
+            // obj.transform.Translate(rasengy_x_offset, rasengy_y_offset, 0f);
 
         }
     }
