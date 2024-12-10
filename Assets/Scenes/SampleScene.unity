@@ -526,7 +526,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 83454a040b7e64eb5bfc5f8b01c80f4a, type: 3}
-  m_Color: {r: 0.59674263, g: 0.8490566, b: 0.6014151, a: 1}
+  m_Color: {r: 0.9811321, g: 0.56924176, b: 0.56924176, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -750,7 +750,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.7538459, y: -1.3846154, z: 0}
-  m_LocalScale: {x: 2.82, y: 2.82, z: 2.82}
+  m_LocalScale: {x: 3.8667839, y: 3.8667839, z: 3.8667839}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -768,8 +768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
-  Ymin: -3.9
-  Ymax: 3.9
+  Ymin: -3.7
+  Ymax: 4.1
   Xmin: -6.9
   Xmax: 6.9
   laserPrefab: {fileID: 7774412245332417008, guid: 3a0186424722143ae9cbb22297fb844f, type: 3}
@@ -798,7 +798,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &1771446056
 GameObject:
